@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">
+				До конца сборов осталось:
+			</h1>
+			<div class="timer-container">
+			</div>
+			<div class="progress">
+				<div class="progress__bar"></div>
+				<div class="progress__count">%</div>
+			</div>
+			<div class="etibariki">
+				<img src="img/kuper.jpg">
+				<img src="img/ovcharov.jpg">
+			</div>
+			<h2 class="subtitle">
+				До включения горячей водички:
+			</h2>
+		</div>
+	<template id="timer-template">
+		<div class="timer">
+					<span id="days"></span>
+					<span id="hours"></span>
+					<span id="minutes"></span>
+					<span id="seconds"></span>
+				</div>
+	</template>
+	</body>
+	<script src="script.js"></script>
+</html>
