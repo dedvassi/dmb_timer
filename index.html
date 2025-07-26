@@ -4,13 +4,33 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<title>ДМБ ТАЙМЕР</title>
 	</head>
 	<body>
+		<marquee class="marquee">123</marquee>
 		<div class="container">
 			<h1 class="title">
 				До конца сборов осталось:
 			</h1>
 			<div class="timer-container">
+				<div class="timer-row previous-state">
+					<span id="prevDays"></span>
+					<span id="prevHours"></span>
+					<span id="prevMinutes"></span>
+					<span id="prevSeconds"></span>
+				</div>
+				<div class="timer-row current-state">
+					<span id="currentDays"></span>
+					<span id="currentHours"></span>
+					<span id="currentMinutes"></span>
+					<span id="currentSeconds"></span>
+				</div>
+				<div class="timer-row next-state">
+					<span id="nextDays"></span>
+					<span id="nextHours"></span>
+					<span id="nextMinutes"></span>
+					<span id="nextSeconds"></span>
+				</div>
 			</div>
 			<div class="progress">
 				<div class="progress__bar"></div>
@@ -20,18 +40,8 @@
 				<img src="img/kuper.jpg">
 				<img src="img/ovcharov.jpg">
 			</div>
-			<h2 class="subtitle">
-				До включения горячей водички:
-			</h2>
 		</div>
-	<template id="timer-template">
-		<div class="timer">
-					<span id="days"></span>
-					<span id="hours"></span>
-					<span id="minutes"></span>
-					<span id="seconds"></span>
-				</div>
-	</template>
+
+		<script src="script.js"></script>
 	</body>
-	<script src="script.js"></script>
 </html>
